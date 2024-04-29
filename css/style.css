@@ -245,24 +245,29 @@ a {
 
 
 /* <!-- ====== 1.1. Header section ====== --> */
-
+/* #preloader{
+    background:#CCD5FC url(Images/whale-loader.gif) no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+} */
 .header-index {
     background-image: url("../Images/bg/hero_bg.png");
     background-position: center center;
     background-size: cover;
 }
 
-header {
-    padding: 20px 0;
-}
+
 
 .navbar {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 15px;
     color: #d3c9c1;
+    z-index: 1000;
 }
 
 .container-nav {
@@ -281,8 +286,8 @@ header {
 }
 
 .nav-link {
-    font-weight: 400;
-    color: #d3c9c1;
+    font-weight: 800;
+    color: #0a0a0a;
 }
 
 nav li a.active,
@@ -365,11 +370,11 @@ nav li a.active,
 }
 
 .nav-right p:first-child {
-    color: #d3c9c1;
+    color: #000000;
 }
 
 .nav-right span {
-    color: #f57c48;
+    color: #000000;
 }
 
 .nav-right .fa-magnifying-glass {
@@ -738,11 +743,12 @@ aside .pages {
 /* ====== 1.2. hero section ====== */
 
 .hero {
-    background-image: url("../Images/bg/hero.png");
+    background-image: url("../Images/home/whale.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 172px 0 279px 0;
+    padding: 72px 0 279px 0;
+    height: 100vh;
 }
 
 .hero .container {
@@ -756,7 +762,7 @@ aside .pages {
 }
 
 .hero-social-icon {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     flex-direction: column !important;
@@ -850,7 +856,7 @@ aside .pages {
 /* ====== 1.3. card section ====== */
 
 .feature {
-    background-color: #150725;
+    background-color: #1C1D6D;
     margin-top: -1px;
     position: relative;
 }
@@ -864,7 +870,7 @@ aside .pages {
 }
 
 .header-card {
-    margin-top: -145px;
+    margin-top: -95px;
     display: flex;
     flex: 0 0 auto;
     width: 25%;
@@ -874,8 +880,9 @@ aside .pages {
 
 .header-card div {
     border-radius: 20px;
-    background: linear-gradient(0deg, #471133 0%, #140921 100%);
-    color: #ffffff;
+    background: #edf3f38f;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #000000;
     padding: 40px 30px;
     transition: all 0.4s ease;
 }
@@ -905,8 +912,8 @@ aside .pages {
 /* ====== 1.4. logoipsum section ====== */
 
 .logoipsum {
-    background-color: #150725;
-    padding: 150px 0;
+    background-color: #1C1D6D;
+    padding: 75px 0;
     margin-top: -1px;
 }
 
@@ -948,7 +955,7 @@ aside .pages {
 /* ====== 1.5. About us section ====== */
 
 .about {
-    background: #3d0f41;
+    background: #EDF3F3;
     padding: 100px 0;
 }
 
@@ -978,17 +985,17 @@ aside .pages {
 
 .about-data h2 {
     margin: 20px 0;
-    color: #ffffff;
+    color: #000000;
 }
 
 .about h5 {
-    color: #ffffff;
+    color: #000000;
     font-weight: 400;
     font-family: "Barlow", sans-serif;
 }
 
 .about p {
-    color: #ffffff;
+    color: #000000;
 }
 
 .about i {
@@ -1003,6 +1010,7 @@ aside .pages {
 
 .about-data a {
     padding: 16px 38px 16px 38px !important;
+    color: #000000;
 }
 
 .mt-15 {
@@ -1011,6 +1019,8 @@ aside .pages {
 
 .mt-30 {
     margin-top: 3rem !important;
+    display: flex;
+    justify-content: center;
 }
 
 .about-imgs {
@@ -1059,7 +1069,7 @@ aside .pages {
 }
 
 .about-hr {
-    color: #ffffff;
+    color: #000000;
     position: absolute;
     right: -50px;
     bottom: 25px;
@@ -1090,7 +1100,7 @@ aside .pages {
 /* ====== 1.6. gallary section ====== */
 
 .portfolio-1 {
-    background: #150725;
+    background: #EDF3F3;
     padding: 120px 0 120px 0;
     margin-top: -1px;
 }
@@ -1111,17 +1121,17 @@ aside .pages {
 
 
 .portfolio-1 h5 {
-    color: #ffffff;
+    color: #000000;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .portfolio-1 h2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .portfolio-1 p {
-    color: #d3c9c1;
+    color: #000000;
     padding-right: 145px;
     margin-top: 1rem;
 }
@@ -1151,11 +1161,15 @@ aside .pages {
 .portfo-center .w-100 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    color: #000000;
+}
+.portfolio a{
+    color: #000000;
 }
 
 /* gallary */
 .gallary {
-    background-image: url("../Images/bg/gallary-bg.png");
+    background-image: url("../Images/home/whale.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-bottom: 120px;
@@ -1174,7 +1188,7 @@ aside .pages {
 }
 
 .ga-bg {
-    background-color: #150725;
+    background-color: #EDF3F3;
     height: 300px;
 }
 
@@ -1211,7 +1225,7 @@ aside .pages {
     cursor: pointer;
     transition: 0.3s;
     background-color: inherit;
-    color: #ffffff;
+    color: #000000;
     border-radius: 10px;
 }
 
@@ -1260,10 +1274,12 @@ aside .pages {
 /* ====== 1.7. Services section ====== */
 
 .service-1 {
-    background: #3d0f41;
+    background: #EDF3F3;
     padding: 120px 0;
 }
-
+.service a{
+    color: #000000;
+}
 
 .service-data {
     display: flex;
@@ -1271,13 +1287,13 @@ aside .pages {
 }
 
 .service-1 h5 {
-    color: #ffffff;
+    color: #000000;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .service-1 h2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .service-1 .col-lg-8 p {
@@ -1285,7 +1301,7 @@ aside .pages {
 }
 
 .service-1 p {
-    color: #d3c9c1;
+    color: #000000;
     position: relative;
     margin-bottom: 15px;
 }
@@ -1325,7 +1341,7 @@ aside .pages {
 }
 
 .service-card a {
-    color: #d3c9c1;
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -1333,7 +1349,7 @@ aside .pages {
 
 .service-card a:hover {
     font-weight: 700;
-    color: #ffffff;
+    color: #000000;
     gap: 8px;
 }
 
@@ -1376,9 +1392,7 @@ aside .pages {
 /* ====== 1.8. Experience section ====== */
 
 .experience {
-    background-image: url("../Images/bg/experience_bg.jpg");
-    background-size: cover;
-    background-position: center center;
+    
     padding: 120px 0;
     position: relative;
     margin-top: -1px;
@@ -1398,17 +1412,17 @@ aside .pages {
 }
 
 .experience h5 {
-    color: #ffffff;
+    color: #000000;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .experience h2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .experience p {
-    color: #d3c9c1;
+    color: #000000;
 }
 
 .experience .col-lg-8 p {
@@ -1418,7 +1432,7 @@ aside .pages {
 .experience .experience-hr1 {
     opacity: 1.25;
     height: 1px;
-    color: #b520a3;
+    color: #000000;
     width: 60px;
     border: 1px solid;
 }
@@ -1427,7 +1441,7 @@ aside .pages {
     width: 100%;
     opacity: 1.25;
     height: 1px;
-    color: #461f72;
+    color: #000000;
     border: 1px solid;
     margin: 35px 0;
 }
@@ -1464,7 +1478,7 @@ aside .pages {
 }
 
 .experience-hr {
-    color: #ffffff;
+    color: #000000;
     position: absolute;
     bottom: -220px;
     left: -45px;
@@ -1480,7 +1494,7 @@ aside .pages {
 .experience-hr hr {
     opacity: 1.25;
     height: 1px;
-    color: #ffffffbf;
+    color: #000000bf;
     width: 60px;
     border: 1px solid;
     margin: 0;
