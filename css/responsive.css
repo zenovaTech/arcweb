@@ -53,6 +53,7 @@
 
     .hero-social-icon {
         position: relative;
+        display: none;
         flex-direction: row !important;
         justify-content: center !important;
     }

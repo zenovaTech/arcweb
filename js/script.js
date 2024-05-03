@@ -251,36 +251,35 @@ $(".team-slider").slick({
   ],
 });
 
-// Get the logo element
 const logo = document.getElementById("logo");
 const header = document.getElementById("navbar");
-const nav_items = document.getElementById("nav-items");
+const navItems = document.getElementById("nav-items");
 
 // Listen for scroll events
-
 window.addEventListener("scroll", () => {
-  // Check if the page has been scrolled down
-  if (window.scrollY > 470) {
-    // If scrolled down, show the logo
-    logo.style.display = "block";
-    header.style.background = "#888888a6";
-    header.style.backdropFilter = "blur(20px)";
-  } else {
-    // If at the top, hide the logo
-    logo.style.display = "none";
-    header.style.background = "none";
-    nav_items.style.color = "black";
-    header.style.backdropFilter = "initial";
+  // Check if the viewport width is greater than a certain threshold (e.g., 600px for mobile)
+  if (window.innerWidth > 600) {
+    // Check if the page has been scrolled down
+    if (window.scrollY > 470) {
+      // If scrolled down, show the logo and update header styles
+      logo.style.display = "block";
+      header.style.background = "#888888a6";
+      header.style.backdropFilter = "blur(20px)";
+      navItems.style.color = "white"; // Example change for nav items color
+    } else {
+      // If at the top, hide the logo and reset header styles
+      logo.style.display = "none";
+      header.style.background = "none";
+      navItems.style.color = "black";
+      header.style.backdropFilter = "initial";
+    }
   }
 });
 
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function () {
-
-    setInterval(() => {
-        
-        loader.style.display = "none";
-    }, 2000);
-
+  setInterval(() => {
+    loader.style.display = "none";
+  }, 2000);
 });
