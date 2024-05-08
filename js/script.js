@@ -219,7 +219,7 @@ $(".sliderlogo").slick({
 $(".team-slider").slick({
   arrows: false,
   dots: true,
-  infinite: false,
+  infinite: true,
   autoplay: true,
   speed: 300,
   slidesToShow: 4,
@@ -282,4 +282,29 @@ window.addEventListener("load", function () {
   setInterval(() => {
     loader.style.display = "none";
   }, 2000);
+});
+
+let imgBox = document.querySelectorAll(".imgBox");
+let contentBox = document.querySelectorAll(".contentBox");
+
+imgBox.forEach((box) => {
+  box.addEventListener("mouseover", function () {
+    const dataId = this.dataset.id;
+    
+    // Reset all contentBox elements
+    contentBox.forEach((box) => {
+      box.classList.remove("active");
+    });
+
+    // Activate the corresponding contentBox
+    document.getElementById(dataId).classList.add("active");
+
+    // Reset all imgBox elements
+    imgBox.forEach((box) => {
+      box.classList.remove("active");
+    });
+
+    // Activate the current imgBox
+    this.classList.add("active");
+  });
 });
