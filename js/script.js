@@ -258,22 +258,23 @@ const navItems = document.getElementById("nav-items");
 // Listen for scroll events
 window.addEventListener("scroll", () => {
   // Check if the viewport width is greater than a certain threshold (e.g., 600px for mobile)
-  if (window.innerWidth > 600) {
+  if (window.innerWidth > 1000) {
     // Check if the page has been scrolled down
     if (window.scrollY > 470) {
       // If scrolled down, show the logo and update header styles
       logo.style.display = "block";
       header.style.background = "#888888a6";
       header.style.backdropFilter = "blur(20px)";
-      navItems.style.color = "white"; // Example change for nav items color
+      
     } else {
       // If at the top, hide the logo and reset header styles
       logo.style.display = "none";
       header.style.background = "none";
       navItems.style.color = "black";
-      header.style.backdropFilter = "initial";
+      
     }
   }
+  
 });
 
 var loader = document.getElementById("preloader");

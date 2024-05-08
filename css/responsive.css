@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
     .container {
-        max-width: 1140px;
+        max-width: 100%;
     }
 
     .logoipsum-slider figure {
@@ -16,7 +16,7 @@
     .container {
         max-width: 960px;
     }
-
+    
     .team-img {
         min-width: 232px;
     }

@@ -266,20 +266,23 @@ nav {
   width: 100% !important;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   padding: 0.5rem 15px;
   color: #d3c9c1;
   z-index: 1000;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  filter: blur("0px");
 }
 
 .container-nav {
   gap: 70px;
+  padding: 25px;
 }
 
 .navbar-logo {
-  margin-right: 25px;
+  position: absolute;
+  left: 0;
+  padding: 25px;
+  
 }
 .navbar-logo img {
   width: 100px;
@@ -371,7 +374,8 @@ nav li a.active,
 }
 
 .nav-right {
-  gap: 45px;
+  gap:45px;
+  margin-left: 50px;
 }
 
 .nav-right p:first-child {
