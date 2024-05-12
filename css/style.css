@@ -233,7 +233,15 @@ a {
   transition: all 0.3s ease;
   color: #c9c3c3;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+body {
+  scroll-snap-type: y mandatory;
+}
+.section {
+  scroll-snap-align: start;
+}
 .container {
   max-width: 100%;
   width: 100%;
@@ -282,7 +290,6 @@ nav {
   position: absolute;
   left: 0;
   padding: 25px;
-  
 }
 .navbar-logo img {
   width: 100px;
@@ -374,7 +381,7 @@ nav li a.active,
 }
 
 .nav-right {
-  gap:45px;
+  gap: 45px;
   margin-left: 50px;
 }
 
@@ -980,7 +987,7 @@ aside .pages {
 
 .about {
   background: #edf3f3;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .about-data {
@@ -990,26 +997,27 @@ aside .pages {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
-.about hr {
+/* .about hr {
   opacity: 1.25;
   height: 1px;
   color: #b520a3;
   width: 60px;
   border: 1px solid;
-}
+} */
 
 .w-50 {
   flex: 0 0 auto;
   width: 50%;
 }
-
+/* 
 .about-title {
   gap: 1rem;
-}
+} */
 
 .about-data h2 {
   margin: 20px 0;
   color: #000000;
+  text-align: center;
 }
 
 .about h5 {
@@ -1096,7 +1104,7 @@ aside .pages {
   color: #000000;
   position: absolute;
   right: -50px;
-  bottom: 25px;
+  bottom: 55px;
   rotate: -90deg;
 }
 
@@ -1104,7 +1112,7 @@ aside .pages {
   opacity: 1.25;
   height: 1px;
   color: #b520a3;
-  width: 60px;
+  width: 20px;
   border: 1px solid;
 }
 
@@ -1348,7 +1356,7 @@ aside .pages {
 
 .service-card {
   border-right: 1px solid black;
-
+  height: 350px;
   box-shadow: 8px 18px 30px 0px rgba(0, 0, 0, 0.2);
   padding: 40px 40px 30px 40px;
   width: 100%;
@@ -1675,7 +1683,7 @@ aside .pages {
 .team {
   background-size: cover;
   background-position: center center;
-  padding: 120px 0 0 0;
+  padding: 80px 0 0 0;
 }
 
 #team {
@@ -1689,7 +1697,10 @@ aside .pages {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
+.team-center {
+  display: flex;
+  justify-content: center;
+}
 .team h2 {
   color: #000000;
   padding: 0 212px 0 0;
@@ -1735,7 +1746,7 @@ aside .pages {
   transition: filter 0.3s ease;
   filter: grayscale(100%);
 }
-.team-img img:hover{
+.team-img img:hover {
   filter: grayscale(0%);
 }
 .overlay {
@@ -1752,7 +1763,7 @@ aside .pages {
 .team-img:hover .overlay {
   height: 50%;
 }
-.overlay:hover .team-img img{
+.overlay:hover .team-img img {
   filter: grayscale(0%);
 }
 
@@ -2272,14 +2283,14 @@ footer form button:hover {
 ::-webkit-slider-thumb:hover {
   background: #555;
 }
-.teamSection{
+.teamSection {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   z-index: 100000;
 }
-.square{
+.square {
   position: relative;
   width: 300px;
   height: 300px;
@@ -2287,46 +2298,42 @@ footer form button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.square span{
+.square span {
   position: absolute;
   inset: 0;
   border: 2px solid #333;
   opacity: 0.5;
 }
-.square span:nth-child(1)
-{
+.square span:nth-child(1) {
   border-radius: 46% 54% 61% 39% / 40% 40% 60% 60%;
   animation: animateSquare 10s linear infinite;
 }
-.square span:nth-child(2)
-{
+.square span:nth-child(2) {
   border-radius: 68% 32% 61% 39% / 49% 52% 68% 51%;
   animation: animateSquare 8s linear infinite;
 }
-.square span:nth-child(3)
-{
+.square span:nth-child(3) {
   border-radius: 56% 44% 36% 64% / 51% 68% 32% 49%;
   animation: animateSquare2 12s linear infinite;
 }
 @keyframes animateSquare {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
 @keyframes animateSquare2 {
-  0%{
+  0% {
     transform: rotate(360deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
-.bottom{
+.bottom {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -2336,7 +2343,7 @@ footer form button:hover {
   justify-content: center;
   align-items: center;
 }
-.bottom .wave{
+.bottom .wave {
   position: absolute;
   top: -80px;
   left: 0;
@@ -2345,57 +2352,57 @@ footer form button:hover {
   background: url("../Images/wave.png");
   background-size: 1000px 100px;
 }
-.bottom .wave#wave1{
+.bottom .wave#wave1 {
   z-index: 1000;
   opacity: 1;
   bottom: 0px;
   animation: animate 4s linear infinite;
 }
-.bottom .wave#wave2{
+.bottom .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
   animation: animate2 4s linear infinite;
 }
-.bottom .wave#wave3{
+.bottom .wave#wave3 {
   z-index: 998;
   opacity: 0.2;
   bottom: 15px;
   animation: animate 3s linear infinite;
 }
-.bottom .wave#wave4{
+.bottom .wave#wave4 {
   z-index: 999;
   opacity: 0.7;
   bottom: 20px;
   animation: animate2 3s linear infinite;
 }
 @keyframes animate {
-  0%{
+  0% {
     background-position-x: 1000px;
   }
-  100%{
+  100% {
     background-position-x: 0px;
   }
 }
 @keyframes animate2 {
-  0%{
+  0% {
     background-position-x: 0px;
   }
-  100%{
+  100% {
     background-position-x: 1000px;
   }
 }
-.center-data .text{
-  position: absolute;
+.center-data .text {
+  position: relative;
   top: 100px;
   left: 10px;
 }
-.center-data .text span{
+.center-data .text span {
   text-transform: uppercase;
   font-style: italic;
   color: #0866ff;
 }
-.icon{
+.icon {
   position: relative;
   display: flex;
   justify-content: center;
@@ -2404,7 +2411,7 @@ footer form button:hover {
   gap: 40px;
   z-index: 100000000;
 }
-.icon .imgBox{
+.icon .imgBox {
   position: relative;
   width: 60px;
   height: 60px;
@@ -2414,12 +2421,12 @@ footer form button:hover {
   box-shadow: 0 0 0 4px #fff;
   opacity: 0.7;
 }
-.icon .imgBox.active{
+.icon .imgBox.active {
   opacity: 1;
   scale: 1.2;
   box-shadow: 0 0 0 2px #fff, 0 0 0 8px #66a3ff, 0 0 0 12px #fff;
 }
-.icon .imgBox img{
+.icon .imgBox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2427,11 +2434,11 @@ footer form button:hover {
   height: 150%;
   object-fit: cover;
 }
-.allTeam{
+.allTeam {
   display: grid;
   gap: 30px;
 }
-.contentBox{
+.contentBox {
   position: absolute;
   inset: 0;
   display: flex;
@@ -2441,12 +2448,12 @@ footer form button:hover {
   transform: scale(0);
   opacity: 0;
 }
-.contentBox.active{
+.contentBox.active {
   transform: scale(1);
   opacity: 1;
   transition-delay: 0.5s;
 }
-.contentBox .card{
+.contentBox .card {
   position: relative;
   display: flex;
   justify-content: center;
@@ -2455,29 +2462,29 @@ footer form button:hover {
   text-align: center;
   gap: 15px;
 }
-.contentBox .card .imgBox{
+.contentBox .card .imgBox {
   position: relative;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
-.contentBox .card .imgBox img{
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 150%;
- object-fit: cover;
+.contentBox .card .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
 }
-.contentBox .card .textBox{
+.contentBox .card .textBox {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: -10px;
 }
-.contentBox .card .textBox h4{
+.contentBox .card .textBox h4 {
   position: relative;
   font-size: 1.35em;
   font-weight: 800;
@@ -2485,22 +2492,22 @@ footer form button:hover {
   line-height: 1em;
   text-transform: uppercase;
 }
-.contentBox .card .textBox h4 b{
+.contentBox .card .textBox h4 b {
   font-size: 0.8em;
   color: #222;
   font-weight: 600;
   letter-spacing: 0.1em;
 }
-.contentBox .card .sci{
+.contentBox .card .sci {
   position: relative;
   display: flex;
   gap: 7px;
   margin-top: 5px;
 }
-.contentBox .card .sci li{
+.contentBox .card .sci li {
   list-style: none;
 }
-.contentBox .card .sci a{
+.contentBox .card .sci a {
   position: relative;
   width: 30px;
   height: 30px;
@@ -2513,7 +2520,37 @@ footer form button:hover {
   border-radius: 50%;
   transition: 0.5s;
 }
-.contentBox .card .sci a:hover{
+.contentBox .card .sci a:hover {
   background: #fff;
   color: #000000;
+}
+.about-in-team {
+  display: flex;
+  position: relative;
+}
+/* Styles for the container */
+.founder-container {
+  display: flex;
+  justify-content: end; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 80vh; /* 80% of the viewport height */
+  background-color: #f0f0f0;
+  max-width: 800px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding around the content */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Styles for the columns */
+.column {
+  text-align: center; /* Center content within each column */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+/* Styles for images within columns */
+.column img {
+  max-width: 200px; /* Ensure image does not exceed column width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra spacing */
+  margin-bottom: 10px; /* Add spacing below each image */
 }
