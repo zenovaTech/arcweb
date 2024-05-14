@@ -986,8 +986,7 @@ aside .pages {
 /* ====== 1.5. About us section ====== */
 
 .about {
-  background: #edf3f3;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 .about-data {
@@ -1008,6 +1007,10 @@ aside .pages {
 .w-50 {
   flex: 0 0 auto;
   width: 50%;
+  display: grid;
+  align-self: start;
+  justify-content: start;
+  margin: 20px;
 }
 /* 
 .about-title {
@@ -1015,15 +1018,15 @@ aside .pages {
 } */
 
 .about-data h2 {
-  margin: 20px 0;
+  margin-bottom: 20px;
   color: #000000;
-  text-align: center;
 }
 
 .about h5 {
   color: #000000;
   font-weight: 400;
   font-family: "Barlow", sans-serif;
+  margin-bottom: 20px;
 }
 
 .about p {
@@ -1038,6 +1041,13 @@ aside .pages {
   background: linear-gradient(66.75deg, #f54a48 0.87%, #fa982f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.about .w-50 p {
+  max-width: 550px;
+  /* position: relative;
+  left: 100px;
+  text-align: center; */
+  font-size: 15px;
 }
 
 .about-data a {
@@ -1078,8 +1088,6 @@ aside .pages {
 .about-imgs img {
   width: 85%;
   display: block;
-  margin: auto;
-  clip-path: circle(48% at 50% 50%);
 }
 
 .ab-count {
@@ -1361,7 +1369,12 @@ aside .pages {
   padding: 40px 40px 30px 40px;
   width: 100%;
 }
-
+.service-card p {
+  height: 100px; /* Adjust this height as needed */
+  overflow: hidden; /* Hide any overflow content beyond the set height */
+  text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+  margin-bottom: 0; /* Remove bottom margin to keep consistent spacing */
+}
 .service-card:hover {
   transform: scale(1.05) !important;
   transition: all 0.4s ease !important;
@@ -1378,9 +1391,10 @@ aside .pages {
   font-weight: 700;
   color: #000000;
   gap: 8px;
+  cursor: pointer;
 }
 
-.service-card h3 {
+.service-card h4 {
   margin: 20px 0;
   color: #000000;
   letter-spacing: 1.25px;
@@ -1703,7 +1717,6 @@ aside .pages {
 }
 .team h2 {
   color: #000000;
-  padding: 0 212px 0 0;
 }
 
 .team p {
@@ -1776,7 +1789,10 @@ aside .pages {
   text-align: center;
   color: #ffffff;
 }
-
+.overlay_text h5 {
+  color: #fff;
+  font-size: 14px;
+}
 .overlay_text h4 {
   margin: 6px 0 15px 0;
 }
@@ -2074,12 +2090,7 @@ aside .pages {
 
 /* ====== 1.14. Footer section ====== */
 
-footer {
-  background: #ffffff;
-  padding: 120px 0 0 0;
-}
-
-.footer-hr .flex {
+/* .footer-hr .flex {
   rotate: -90deg;
 }
 
@@ -2107,9 +2118,9 @@ footer {
   color: #000000bf;
   width: 40px;
   border: 1px solid;
-}
+} */
 
-footer form {
+/* footer form {
   border-radius: 50px;
   border: 1px solid #ffffff;
   background: #b7b8d8;
@@ -2134,7 +2145,7 @@ footer form button {
 
 footer form button:hover {
   color: #7436bb;
-}
+} */
 
 #footer-message {
   background: #fff;
@@ -2553,4 +2564,56 @@ footer form button:hover {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove extra spacing */
   margin-bottom: 10px; /* Add spacing below each image */
+}
+.services-section {
+  padding: 0;
+}
+.services-section .container{
+  padding: 0 !important;
+}
+.main-view{
+   background-image: url("../Images/stratargy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 72px 0 279px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+}
+.main-view .text-area{
+  margin-top: auto; /* Push text-area to the bottom */
+  color: rgb(255, 255, 255); /* Example text color */
+  padding: 20px; /* Example padding for text-area */
+}
+.services-section .details-section {
+  display: flex;
+  justify-content: space-between;
+}
+.services-section .details-section .services-info{
+  flex-basis: 48%;
+  padding: 20px;
+}
+.services-section .services-intro{
+  display: flex;
+  max-width: 800px;
+  justify-content: center;
+  padding: 50px;
+  margin: 0 auto;
+ 
+}
+.services-section .services-intro p{
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+.services-section .details-section .services-info h2{
+  margin-bottom: 50px;
+  max-width: 450px;
+  text-align: center;
+}
+.services-section .details-section .services-info p{
+  font-size: 22px;
+
 }

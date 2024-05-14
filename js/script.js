@@ -221,9 +221,9 @@ $(".team-slider").slick({
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 300,
+  speed: 200,
   slidesToShow: 4,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   responsive: [
     {
       breakpoint: 1024,
