@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* ============= 01. Reset section ============= */
 
 html,
@@ -280,6 +280,7 @@ nav {
   color: #d3c9c1;
   z-index: 1000;
   filter: blur("0px");
+  height: 120px;
 }
 
 .container-nav {
@@ -302,7 +303,6 @@ nav {
 }
 
 .nav-link {
-  
   color: #0a0a0a;
 }
 
@@ -828,11 +828,12 @@ aside .pages {
 }
 
 .center-data {
-  text-align: center;
+  /* text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem; */
+
 }
 
 .hero h3 {
@@ -1032,7 +1033,6 @@ aside .pages {
 
 .about p {
   color: #000000;
-  
 }
 
 .about i {
@@ -2174,7 +2174,7 @@ footer form button:hover {
   background: black;
   color: #ffffff;
   padding: 50px 0;
-  margin-top: 77px;
+
 }
 
 .footer-menu img {
@@ -2541,7 +2541,7 @@ footer form button:hover {
   display: flex;
   position: relative;
 }
-.p-inabout{
+.p-inabout {
   margin-bottom: 10px;
 }
 /* Styles for the container */
@@ -2573,21 +2573,21 @@ footer form button:hover {
 .services-section {
   padding: 0;
 }
-.services-section .container{
+.services-section .container {
   padding: 0 !important;
 }
-.main-view{
-   background-image: url("../Images/stratargy.jpg");
+.main-view {
+  background-image: url("../Images/stratargy.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 72px 0 279px 0;
   height: 100vh;
   display: flex;
-  
+
   justify-content: center; /* Align content to the bottom */
 }
-.main-view .text-area{
+.main-view .text-area {
   margin-top: auto; /* Push text-area to the bottom */
   color: rgb(255, 255, 255); /* Example text color */
   padding: 20px; /* Example padding for text-area */
@@ -2602,13 +2602,13 @@ footer form button:hover {
   display: flex;
   justify-content: space-between;
 }
-.services-section .details-section .services-info{
+.services-section .details-section .services-info {
   flex-basis: 50%;
-  padding:  20px;
+  padding: 20px;
   max-width: 45%;
   margin: 0 auto;
 }
-.services-section .services-intro{
+.services-section .services-intro {
   display: flex;
   flex-direction: column;
   max-width: 800px;
@@ -2616,49 +2616,196 @@ footer form button:hover {
   text-align: center;
   padding: 50px;
   margin: 0 auto;
- 
 }
-.services-section .services-intro p{
- font-size: 18px;
+.services-section .services-intro p {
+  font-size: 18px;
   text-align: center;
+  line-height: 2vw;
 }
-.services-section .details-section .services-info h3{
+.services-section .details-section .services-info h3 {
   margin-bottom: 20px;
   max-width: 450px;
   text-align: left;
 }
 @media (max-width: 768px) {
   .service-section {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .service-info {
-      margin-bottom: 30px;
-      flex-basis: 100%;
+    margin-bottom: 30px;
+    flex-basis: 100%;
   }
 }
-.work-section{
+.work-section {
   padding: 0 !important;
 }
-.work-section .container{
+.work-section .container {
   padding: 0 !important;
 }
-.work-view{
+.work-view {
   background-image: url("../Images/lpl3.jpg");
   filter: grayscale(0.5);
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- padding: 72px 0 279px 0;
- height: 100vh;
- display: flex;
- flex-direction: column;
- justify-content: flex-end; /* Align content to the bottom */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-.work-view .text-area{
+.work-section .container .text-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.our-work-section {
+  padding: 0 !important;
+}
+.our-work-section .container {
+  padding: 0 !important;
+}
+.our-work-view {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+  padding: 72px 0 279px 0;
+}
+
+.background-video {
   position: absolute;
-  margin-top: auto; /* Push text-area to the bottom */
-  color: rgb(255, 255, 255); /* Example text color */
-  padding: 20px; /* Example padding for text-area */
-  margin-left: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Ensure the video covers the entire background */
+  filter: grayscale(0.4);
+  z-index: -1; /* Place the video behind other content */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  /* Additional styling for your content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.content h1 {
+  color: white;
+}
+
+.work-heading-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: center;
+  padding: 150px;
+  margin: 0 auto;
+}
+.work-catagory-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 6px; /* Space between cards */
+}
+
+.work-catagory-section .card {
+  background-color: #f0f0f0;
+
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 350px; /* Set a fixed height for all cards */
+  position: relative;
+}
+.work-catagory-section .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire card */
+  display: block;
+  position: absolute; /* Position image absolutely to cover the card */
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+.work-catagory-section .card img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.work-section .services-intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+}
+.work-section .services-intro p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 2vw;
+}
+.img-conatainer {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-conatainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.img-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay with 50% opacity */
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+}
+.summ-details-section{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.summ-details-section .summ-info{
+  flex-basis: 50%;
+  padding: 20px;
+  max-width: 45%;
+  margin: 0 auto;
+}
+.summ-details-section .summ-info hr{
+  width: 50px;
+  border: 3px solid;
+  border-radius: 8px;
+  color:#73b93b;
+  margin: 5px;
+}
+.summ-details-section .summ-info h3{
+  margin-bottom: 10px;
+}
+.summ-details-section .summ-info img{
+  width: 100%;
+  object-fit: cover;
+}
+.summ-details-section .summ-info ul{
+  padding: 20px;
+  list-style: circle;
+}
+.summ-details-section .summ-info ul li{
+  padding: 10px;
 }

@@ -631,6 +631,9 @@
 
 
 @media screen and (max-width: 480px) {
+    html{
+        overflow-x: hidden;
+    }
     .hero {
         padding: 44px 0 82px 0;
     }

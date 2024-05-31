@@ -251,39 +251,7 @@ $(".team-slider").slick({
   ],
 });
 
-const logo = document.getElementById("logo");
-const header = document.getElementById("navbar");
-const navItems = document.getElementById("nav-items");
 
-// Listen for scroll events
-window.addEventListener("scroll", () => {
-  // // Check if the viewport width is greater than a certain threshold (e.g., 600px for mobile)
-  // if (window.innerWidth > 1000) {
-  //   // Check if the page has been scrolled down
-  //   if (window.scrollY > 470) {
-  //     // If scrolled down, show the logo and update header styles
-  //     logo.style.display = "block";
-  //     header.style.background = "#888888a6";
-  //     header.style.backdropFilter = "blur(20px)";
-      
-  //   } else {
-  //     // If at the top, hide the logo and reset header styles
-  //     logo.style.display = "none";
-  //     header.style.background = "none";
-  //     navItems.style.color = "black";
-      
-  //   }
-  // }
-  if (document.body.scrollTop > 470 || document.documentElement.scrollTop > 470) {
-    document.getElementById("logo").style.display = "block";
-    document.getElementById("navbar").style.background = "#888888a6";
-    document.getElementById("navbar").style.backdropFilter = "blur(20px)";
-  } else {
-    document.getElementById("logo").style.display = "none";
-    document.getElementById("navbar").style.background = "none";
-    document.getElementById("navbar").style.backdropFilter = "blur(0px)";
-  }
-});
 
 var loader = document.getElementById("preloader");
 
