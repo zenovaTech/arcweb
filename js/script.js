@@ -190,10 +190,10 @@ document.addEventListener("DOMContentLoaded", function () {
 $(".sliderlogo").slick({
   arrows: false,
   dots: false,
-  infinite: false,
-  autoplay: false,
+  infinite: true,
+  autoplay: true,
   speed: 300,
-  slidesToShow: 5,
+  slidesToShow: 7,
   slidesToScroll: 1,
   responsive: [
     {
@@ -221,9 +221,9 @@ $(".team-slider").slick({
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 200,
+  speed: 300,
   slidesToShow: 4,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,

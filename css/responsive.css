@@ -637,7 +637,23 @@
     .hero {
         padding: 44px 0 82px 0;
     }
-
+    .services-section .services-intro p {
+    
+        text-align: center;
+        line-height: 15px;
+      }
+      .navbar-logo{
+        display: none;
+      }
+      .work-heading-container{
+        max-width:  100%;
+        padding: 10px;
+      }
+      .work-heading-container h2{
+        width: 100%;
+      
+        word-spacing: 0.5px;
+      }
     /* global style */
     h1 {
         font-size: 40px;

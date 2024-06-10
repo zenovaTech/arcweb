@@ -38,67 +38,15 @@
                 <span class="fa-solid fa-bars"></span>
               </button>
               <!-- menus -->
-              <ul class="navbar-nav flex">
-                <li><a class="nav-link active" href="/home.html" >Home</a></li>
-                <li><a class="nav-link" href="about.html">About</a></li>
-                <!-- <li><a class="nav-link" href="#Services">Services</a></li> -->
-                <li><a class="nav-link" href="comingsoon.html">Contact</a></li>
-                <li><a class="nav-link" href="comingsoon.html">Careers</a></li>
-                <!-- <li class="dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarScrollingDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Pages
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarScrollingDropdown"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html"
-                        >Services</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html"
-                        >Pricing Plan</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html"
-                        >Portfolio</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html">Team</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html"
-                        >Testimonials</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html">FAQ</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html">Blog</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="coming_soon.html"
-                        >Coming Soon</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="comingsoon.html">404</a>
-                    </li>
-                  </ul>
-                </li> -->
-              </ul>
+              <ul id="navbar-nav" class="navbar-nav flex">
+                <li><a id="home-link" class="nav-link" href="/home.html">Home</a></li>
+                <li><a id="about-link" class="nav-link" href="about.html">About</a></li>
+                <!-- <li><a id="services-link" class="nav-link" href="#Services">Services</a></li> -->
+                <li><a id="work-link" class="nav-link" href="our-work.html">Work</a></li>
+                <li><a id="careers-link" class="nav-link" href="comingsoon.html">Careers</a></li>
+                <li><a id="contact-link" class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            
             </div>
 
             <div class="flex nav-right">
@@ -234,53 +182,49 @@
       <!-- ====== End of 1.1. Header section ====== -->
 
       <!-- ====== 1.5. About us section ====== -->
-      <section class="about">
+      <section class="about-page">
         <div class="container" style="margin-top: 70px">
           <div class="about-data flex-sb">
             <div class="w-50" data-aos="fade-up">
-              <div class="flex about-title">
-                <!-- <hr /> -->
-                <!-- <h5>ABOUT US</h5> -->
+              <div class="description">
+
+                <div class="flex about-title">
+                  <!-- <hr /> -->
+                  <!-- <h5>ABOUT US</h5> -->
+                  <h3>We ride the digital tides to drive growth.</h3>
+                </div>
+                <p>
+                  <p class="p-inabout">
+                    We are a progressive, full-service digital marketing and
+                    design agency. We propel brand growth through powerful
+                    consumer connections and standout digital experiences. Our
+                    multidisciplinary team of strategic, creative, and analytical
+                    experts collaborates seamlessly to forge innovative solutions
+                    that captivate digitally savvy audiences and accelerate
+                    revenue growth.
+                  </p>
+                  <p class="p-inabout">
+                    With an extensive portfolio working with industry leaders, we
+                    operate at the forefront of emerging trends and technologies.
+                    Our battle-tested professionals deeply understand the
+                    challenges of the 24/7 digital landscape and possess the
+                    expertise to unlock measurable growth.
+                  </p>
+                  <p class="p-inabout">
+                    Driven by a shared passion for excellence, we partner closely
+                    with brands to develop tailored campaigns that resonate and
+                    inspire action. Our comprehensive capabilities ensure a
+                    unified, insight-driven approach that maximizes impact and
+                    elevates our client partners' digital presence.
+                  </p>
+                </p>
               </div>
-              <h2>We ride the digital tides to drive growth.</h2>
-              <p>
-                <p class="p-inabout">
-                  We are a progressive, full-service digital marketing and
-                  design agency. We propel brand growth through powerful
-                  consumer connections and standout digital experiences. Our
-                  multidisciplinary team of strategic, creative, and analytical
-                  experts collaborates seamlessly to forge innovative solutions
-                  that captivate digitally savvy audiences and accelerate
-                  revenue growth.
-                </p>
-                <p class="p-inabout">
-                  With an extensive portfolio working with industry leaders, we
-                  operate at the forefront of emerging trends and technologies.
-                  Our battle-tested professionals deeply understand the
-                  challenges of the 24/7 digital landscape and possess the
-                  expertise to unlock measurable growth.
-                </p>
-                <p class="p-inabout">
-                  Driven by a shared passion for excellence, we partner closely
-                  with brands to develop tailored campaigns that resonate and
-                  inspire action. Our comprehensive capabilities ensure a
-                  unified, insight-driven approach that maximizes impact and
-                  elevates our client partners' digital presence.
-                </p>
-              </p>
               
-            </div>
-            <div class="about-imgs flex flex-center w-50" data-aos="fade-down">
-              <div>
-                <img src="Images/aboutimg.jpg" alt="img" />
+              <div class="about-imgs flex flex-center w-50" data-aos="fade-down">
+                
+                <img src="Images/team/IMG_2910.JPG" alt="img" />
+                
               </div>
-              <!-- 
-              <div class="about-hr flex gap-1">
-                <hr />
-                <h6>Who we are</h6>
-              </div>
-              <p></p> -->
-            </div>
           </div>
         </div>
       </section>
@@ -315,296 +259,232 @@
           </div>
           <div class="team-slider flex mt-15">
             <div class="team-img">
-              <img src="Images/VIS01153.JPG" alt="Avatar" />
+              <img src="Images/team/Shalika_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Ashani Silva</h3>
-                  <h5>Senior Creative Designer</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Shalika Suraweera</h5>
+                  <h6>Director/Co-Founder</h6>
+                 
                 </div>
               </div>
             </div>
 
-            <div class="team-img">
-              <img src="Images/DSC08377.jpg" alt="Avatar" />
+            <!-- <div class="team-img">
+              <img src="Images/team/Yasodha_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Sahan Alahakoon</h3>
-                  <h5>Assistant Brand Manager</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Yasodha Hettiarachchi</h5>
+                  <h6>Director</h6>
+                </div>
+              </div>
+            </div> -->
+            <div class="team-img">
+              <img src="Images/team/Sahan_500-x-500.png" alt="Avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h5>Sahan Alahakoon</h5>
+                  <h6>Assistant Brand Manager</h6>
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01123.JPG" alt="Avatar" />
+              <img src="Images/team/Anuka_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Jonny Coll</h3>
-                  <h5>Developer</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Anuka Indeera</h5>
+                  <h6>Senior Multimedia Designer / Video Production Head</h6>
+          
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01192.JPG" alt="Avatar" />
+              <img src="Images/team/Sandeepa_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Rafayal De Silva</h3>
-                  <h5>Video Editor</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Sandeepa Dilruk</h5>
+                  <h6>Creative Head</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01162.JPG" alt="Avatar" />
+              <img src="Images/team/Rishwa_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Hirushi Navodya</h3>
-                  <h5>Senior Brand Executive</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Rishwa Alwis</h5>
+                  <h6>Assistant Brand Manager</h6>
+                 
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/DSC08392.JPG" alt="Avatar" />
+              <img src="Images/team/Ayesh2_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Anuka Indeera</h3>
-                  <h5>Senior Multimedia Designer / Video Production Head</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Ayesh Madushanka</h5>
+                  <h6>Senior Brand Executive</h6>
+                 
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01104.JPG" alt="Avatar" />
+              <img src="Images/team/Hirushi_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Ramesh Rajapaksha</h3>
-                  <h5>Brand Executive</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Hirushi Navodya</h5>
+                  <h6>Senior Brand Executive</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01089.JPG" alt="Avatar" />
+              <img src="Images/team/Ramesh_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Ayesh Madushanka</h3>
-                  <h5>Senior Brand Executive</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Ramesh Rajapaksha</h5>
+                  <h6>Brand Executive</h6>
+                 
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/DSC08371.JPG" alt="Avatar" />
+              <img src="Images/team/Savani_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Avishka Dissanayaka</h3>
-                  <h5>Creative Designer</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Savani Imasha</h5>
+                  <h6>Senior Creative Designer</h6>
+                 
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/IMG_8616 .JPG" alt="Avatar" />
+              <img src="Images/team/Sadun_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Harsha Gunasekara</h3>
-                  <h5>Marketing Executive</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Sandun Priyashan</h5>
+                  <h6>Senior Creative Designer</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/DSC08419 copy.JPG" alt="Avatar" />
+              <img src="Images/team/Methmina_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Heshani Sanjula</h3>
-                  <h5>Customer Support Executive</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Methmina Gunarathne</h5>
+                  <h6>Senior Creative Designer</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01108.JPG" alt="Avatar" />
+              <img src="Images/team/Ashani_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Rishwa Alwis</h3>
-                  <h5>Assistant Brand Manager</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Ashani Silva</h5>
+                  <h6>Senior Creative Designer</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01114.JPG" alt="Avatar" />
+              <img src="Images/team/Sachintha_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Sandun Priyashan</h3>
-                  <h5>Senior Creative Designer</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Sachintha Miranga</h5>
+                  <h6>Creative Designer</h6>
+                 
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01162.JPG" alt="Avatar" />
+              <img src="Images/team/Avishka_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Divya Keshari</h3>
-                  <h5>Customer Support Executive</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Avishka Dissanayaka</h5>
+                  <h6>Creative Designer</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01170.JPG" alt="Avatar" />
+              <img src="Images/team/Parami_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Randil Alwis</h3>
-                  <h5>Multimedia Designer</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Parami Aloka</h5>
+                  <h6>Creative Designer - Intern</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/VIS01150.JPG" alt="Avatar" />
+              <img src="Images/team/Niroshan_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Sandeepa Dilruk</h3>
-                  <h5>Creative Head</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Niroshan</h5>
+                  <h6>Production</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/DSC08380.JPG" alt="Avatar" />
+              <img src="Images/team/Randil_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Savani Imasha</h3>
-                  <h5>Senior Creative Designer</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Randil Alwis</h5>
+                  <h6>Multimedia Designer</h6>
+                 
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/DSC08429 .JPG" alt="Avatar" />
+              <img src="Images/team/Rafayel_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Parami Aloka</h3>
-                  <h5>Creative Designer- Intern</h5>
-                  <div class="flex flex-center gap-1">
+                  <h5>Rafayal De Silva</h5>
+                  <h6>Video Editor</h6>
+                  <!-- <div class="flex flex-center gap-1">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/DSC08373.JPG" alt="Avatar" />
+              <img src="Images/team/Heshani_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Sachintha Miranga</h3>
-                  <h5>Creative Designer</h5>
-                  <div class="flex flex-center gap-1">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  <h5>Heshani Sanjula</h5>
+                  <h6>Customer Support Executive</h6>
+                  
                 </div>
               </div>
             </div>
             <div class="team-img">
-              <img src="Images/IMG_8625.JPG" alt="Avatar" />
+              <img src="Images/team/Divya_500-x-500.png" alt="Avatar" />
               <div class="overlay">
                 <div class="overlay_text">
-                  <h3>Methmina Gunarathne</h3>
-                  <h5>Senior Creative Designer</h5>
-                  <div class="flex flex-center gap-1">
+                  <h5>Divya Keshari</h5>
+                  <h6>Customer Support Executive</h6>
+                  <!-- <div class="flex flex-center gap-1">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="team-btn">
+          <!-- <div class="team-btn">
             <div class="container flex flex-sb gap-2 flex-wrap">
               <h4>
                 Ask A Question To Our Amazing Team, And Get, Response Quickly.
               </h4>
               <a href="contact.html" class="btn_hover2">Contact Now</a>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- ====== End of 1.10. team section ====== -->
@@ -632,16 +512,16 @@
                 <h4>Quick Links</h4>
                 <ul class="flex flex-col gap-2 flex-start">
                   <li><a href="#">Home</a></li>
-                  <li><a href="comingsoon.html">About</a></li>
-                  <li><a href="comingsoon.html">Our Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="our-work.html">Our Work</a></li>
                   <li><a href="comingsoon.html">Blogs</a></li>
                 </ul>
               </div>
               <div class="w-16 mt-45 flex-end">
                 <ul class="flex flex-col gap-2 flex-start">
                   <!-- <li><a href="comingsoon.html">FAQ</a></li> -->
-                  <li><a href="comingsoon.html">Contact</a></li>
-                  <li><a href="comingsoon.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <!-- <li><a href="comingsoon.html">Services</a></li> -->
                   <!-- <li><a href="comingsoon.html">Team</a></li> -->
                   <!-- <li><a href="#">Privacy policy</a></li> -->
                 </ul>
@@ -734,5 +614,33 @@
 
 
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          // Get the current URL path
+          const path = window.location.pathname;
+  
+          // Remove 'active' class from all links
+          const navLinks = document.querySelectorAll('.nav-link');
+          navLinks.forEach(link => {
+              link.classList.remove('active');
+          });
+  
+          // Add 'active' class to the current link
+          if (path.includes('home.html')) {
+              document.getElementById('home-link').classList.add('active');
+          } else if (path.includes('about.html')) {
+              document.getElementById('about-link').classList.add('active');
+          } else if (path.includes('#Services')) {
+              document.getElementById('services-link').classList.add('active');
+          } else if (path.includes('comingsoon.html') && path.includes('contact')) {
+              document.getElementById('contact-link').classList.add('active');
+          } else if (path.includes('our-work.html')) {
+              document.getElementById('work-link').classList.add('active');
+          } else if (path.includes('comingsoon.html') && path.includes('careers')) {
+              document.getElementById('careers-link').classList.add('active');
+          }
+      });
+  </script>
+  
   </body>
 </html>

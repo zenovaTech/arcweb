@@ -42,41 +42,14 @@
                 <span class="fa-solid fa-bars"></span>
               </button>
               <!-- menus -->
-              <ul class="navbar-nav flex">
-                <li>
-                  <a
-                    class="nav-link active"
-                    href="/home.html"
-                    style="color: white !important"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-link"
-                    href="about.html"
-                    style="color: white !important"
-                    >About</a
-                  >
-                </li>
-                <!-- <li><a class="nav-link" href="#Services">Services</a></li> -->
-                <li>
-                  <a
-                    class="nav-link"
-                    href="comingsoon.html"
-                    style="color: white !important"
-                    >Contact</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-link"
-                    href="comingsoon.html"
-                    style="color: white !important"
-                    >Careers</a
-                  >
-                </li>
-              </ul>
+              <ul id="navbar-nav" class="navbar-nav flex">
+                <li><a id="home-link" class="nav-link" href="/home.html">Home</a></li>
+                <li><a id="about-link" class="nav-link" href="about.html">About</a></li>
+                <!-- <li><a id="services-link" class="nav-link" href="#Services">Services</a></li> -->
+                <li><a id="work-link" class="nav-link" href="our-work.html">Work</a></li>
+                <li><a id="careers-link" class="nav-link" href="comingsoon.html">Careers</a></li>
+                <li><a id="contact-link" class="nav-link" href="comingsoon.html">Contact</a></li>
+            </ul>
             </div>
 
             <div class="flex nav-right">
@@ -281,17 +254,17 @@
               <div class="w-16 mt-1">
                 <h4>Quick Links</h4>
                 <ul class="flex flex-col gap-2 flex-start">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="comingsoon.html">About</a></li>
-                  <li><a href="comingsoon.html">Our Work</a></li>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="our-work.html">Our Work</a></li>
                   <li><a href="comingsoon.html">Blogs</a></li>
                 </ul>
               </div>
               <div class="w-16 mt-45 flex-end">
                 <ul class="flex flex-col gap-2 flex-start">
                   <!-- <li><a href="comingsoon.html">FAQ</a></li> -->
-                  <li><a href="comingsoon.html">Contact</a></li>
-                  <li><a href="comingsoon.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <!-- <li><a href="comingsoon.html">Services</a></li> -->
                   <!-- <li><a href="comingsoon.html">Team</a></li> -->
                   <!-- <li><a href="#">Privacy policy</a></li> -->
                 </ul>
@@ -375,5 +348,53 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          // Get the current URL path
+          const path = window.location.pathname;
+  
+          // Remove 'active' class from all links
+          const navLinks = document.querySelectorAll('.nav-link');
+          navLinks.forEach(link => {
+              link.classList.remove('active');
+          });
+  
+          // Add 'active' class to the current link
+          if (path.includes('home.html')) {
+              document.getElementById('home-link').classList.add('active');
+          } else if (path.includes('about.html')) {
+              document.getElementById('about-link').classList.add('active');
+          } else if (path.includes('#Services')) {
+              document.getElementById('services-link').classList.add('active');
+          } else if (path.includes('comingsoon.html') && path.includes('contact')) {
+              document.getElementById('contact-link').classList.add('active');
+          } else if (path.includes('our-work.html')) {
+              document.getElementById('work-link').classList.add('active');
+          } else if (path.includes('comingsoon.html') && path.includes('careers')) {
+              document.getElementById('careers-link').classList.add('active');
+          }
+      });
+  </script>
+  <script>
+    if (screen.width > 1000) {
+      document.getElementById("navbar-nav").display = "block";
+      window.addEventListener("scroll", () => {
+        if (
+          document.body.scrollTop > 470 ||
+          document.documentElement.scrollTop > 470
+        ) {
+          // document.getElementById("logo").style.display = "block";
+          document.getElementById("navbar").style.background = "#888888a6";
+          document.getElementById("navbar").style.backdropFilter =
+            "blur(20px)";
+        } else {
+          // document.getElementById("logo").style.display = "none";
+          document.getElementById("navbar").style.background = "none";
+          document.getElementById("navbar").style.backdropFilter =
+            "blur(0px)";
+        }
+      });
+    }
+  </script>
   </body>
 </html>
