@@ -487,6 +487,38 @@
           </div> -->
         </div>
       </section>
+      <section class="about-gallery">
+        <div class="container">
+          <div class="content">
+            <div class="top-img">
+              <img src="Images/gallery/ARC-Photo-booth 1.png" alt="">
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="Images/gallery/Gallery_01.png" class="hover-zoom">
+                <img src="Images/gallery/Gallery_02.png" class="hover-zoom">
+                <img src="Images/gallery/Gallery_03.png" class="hover-zoom">
+              </div>
+              <div class="column">
+                <img src="Images/gallery/Gallery_03.png" class="hover-zoom">
+                <img src="Images/team/IMG_2910.JPG" class="hover-zoom">
+              </div>
+              <div class="column">
+                <img src="Images/gallery/Gallery_04.png" class="hover-zoom">
+              </div>
+              <div class="column">
+                <img src="Images/gallery/Gallery_05.png" class="hover-zoom">
+                <img src="Images/gallery/Gallery_03.png" class="hover-zoom">
+              </div>
+              <div class="column">
+                <img src="Images/gallery/Gallery_01.png" class="hover-zoom">
+                <img src="Images/gallery/Gallery_03.png" class="hover-zoom">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <!-- ====== End of 1.10. team section ====== -->
 
       <footer>
@@ -606,13 +638,30 @@
     <!-- custom js -->
     <script src="js/script.js"></script>
     <script>
-      
-          document.getElementById("logo").style.display = "block";
-          document.getElementById("navbar").style.background = "#888888a6";
-          document.getElementById("navbar").style.backdropFilter = "blur(20px)";
-       
-
-
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+      if (screen.width > 1000) {
+        window.addEventListener("scroll", function () {
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+          if (scrollTop > 470) {
+            if (scrollTop > lastScrollTop) {
+              navbar.classList.add("hidden");
+            } else {
+              navbar.classList.remove("hidden");
+              navbar.style.background = "#888888a6";
+              navbar.style.backdropFilter = "blur(20px)";
+            }
+          } else {
+            navbar.classList.remove("hidden");
+            if (scrollTop === 0) {
+              navbar.style.background = "#888888a6";
+              navbar.style.backdropFilter = "blur(20px)";
+            }
+          }
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+      }
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -641,6 +690,40 @@
           }
       });
   </script>
-  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const images = document.querySelectorAll('.hover-zoom');
+  const popup = document.createElement('div');
+  const popupImg = document.createElement('img');
+  const closeBtn = document.createElement('span');
+
+  popup.classList.add('img-popup');
+  popupImg.classList.add('img-popup-content');
+  closeBtn.classList.add('close');
+  closeBtn.innerHTML = '&times;';
+
+  popup.appendChild(closeBtn);
+  popup.appendChild(popupImg);
+  document.body.appendChild(popup);
+
+  images.forEach(image => {
+    image.addEventListener('click', function () {
+      popupImg.src = this.src;
+      popup.style.display = 'block';
+    });
+  });
+
+  closeBtn.addEventListener('click', function () {
+    popup.style.display = 'none';
+  });
+
+  popup.addEventListener('click', function (e) {
+    if (e.target !== popupImg) {
+      popup.style.display = 'none';
+    }
+  });
+});
+
+  </script>
   </body>
 </html>
