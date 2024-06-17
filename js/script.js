@@ -2,8 +2,12 @@
 function openNav() {
   "use strict";
   const sidepanel = document.getElementById("mySidepanel");
+  const navbarToggler = document.getElementById("navbar-toggler");
   if (sidepanel) {
     sidepanel.style.left = "0";
+    if (window.innerWidth <= 1000) { // Check if the screen width is 768px or less
+      navbarToggler.style.display = "none";
+    }
   } else {
     console.error("Error: Side panel element not found!");
   }
@@ -12,24 +16,31 @@ function openNav() {
 function closeNav() {
   "use strict";
   const sidepanel = document.getElementById("mySidepanel");
+  const navbarToggler = document.getElementById("navbar-toggler");
   if (sidepanel) {
-    sidepanel.style.left = "-320px";
+    sidepanel.style.left = "-320px"; // Adjust this value based on the width of your sidepanel
+    if (window.innerWidth <= 1000) { // Check if the screen width is 768px or less
+      navbarToggler.style.display = "block";
+    }
   } else {
     console.error("Error: Side panel element not found!");
   }
 }
 
-function toggleCollapse(elementId) {
-  var element = document.getElementById(elementId);
-  var button = document.querySelector(".collapse_btn a");
-
-  // Toggle the 'show' class
-  element.classList.toggle("show");
-
-  // Toggle aria-expanded attribute
-  var isExpanded = button.getAttribute("aria-expanded") === "true";
-  button.setAttribute("aria-expanded", !isExpanded);
+function toggleCollapse(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    const isCollapsed = element.classList.contains('collapse');
+    if (isCollapsed) {
+      element.classList.remove('collapse');
+    } else {
+      element.classList.add('collapse');
+    }
+  } else {
+    console.error(`Error: Element with id ${id} not found!`);
+  }
 }
+
 
 // search-bar
 function open_search_bar() {
@@ -251,8 +262,6 @@ $(".team-slider").slick({
   ],
 });
 
-
-
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function () {
@@ -267,7 +276,7 @@ let contentBox = document.querySelectorAll(".contentBox");
 imgBox.forEach((box) => {
   box.addEventListener("mouseover", function () {
     const dataId = this.dataset.id;
-    
+
     // Reset all contentBox elements
     contentBox.forEach((box) => {
       box.classList.remove("active");
