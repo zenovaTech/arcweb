@@ -228,7 +228,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  text-transform: capitalize;
+
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -253,7 +253,7 @@ body {
 
 /* <!-- ====== 1.1. Header section ====== --> */
 #preloader {
-  background: #ccd5fc url("../Images/whale-loader.gif") no-repeat center center;
+  background: #ffffff url("../Images/lg.gif") no-repeat center center;
   background-size: 20%;
   height: 100vh;
   width: 100%;
