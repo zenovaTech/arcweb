@@ -295,7 +295,7 @@ nav {
 .navbar-logo {
   position: absolute;
   left: 0;
-  padding: 25px;
+  padding-left: 85px;
 }
 .navbar-logo img {
   width: 100px;
@@ -304,6 +304,7 @@ nav {
 
 .navbar-nav {
   gap: 50px;
+  padding-right: 45px;
 }
 
 .nav-link {
@@ -313,7 +314,7 @@ nav {
 nav li a.active,
 .nav-link:is(:hover, :focus-visible) {
   color: #ffffff;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(255, 255, 255);
   padding: 2px;
 
 }
