@@ -651,6 +651,12 @@
         font-size: 10px;
         text-align: center;
       }
+      .work .container .flex a{
+        width: 180px;
+        
+        font-size: 10px;
+        text-align: center;
+      }
       .navbar-logo{
         display: none;
       }
