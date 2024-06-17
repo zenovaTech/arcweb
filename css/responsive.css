@@ -637,6 +637,9 @@
     .hero {
         padding: 44px 0 82px 0;
     }
+    .logoipsum h3{
+        font-size: 12px;
+    }
     .services-section .services-intro p {
     
         text-align: center;
