@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/easy.css" />
     <link rel="stylesheet" href="css/slick.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="shortcut icon" href="Images/ARC_Logo.png" type="image/x-icon" />
 
@@ -34,7 +35,12 @@
               <a class="navbar-logo" href="/"
                 ><img id="logo" src="Images/ARC_Logo.png" alt="logo"
               /></a>
-              <button id="navbar-toggler" class="navbar-toggler" onclick="openNav()" type="button">
+              <button
+                id="navbar-toggler"
+                class="navbar-toggler"
+                onclick="openNav()"
+                type="button"
+              >
                 <span class="fa-solid fa-bars"></span>
               </button>
               <!-- menus -->
@@ -73,7 +79,6 @@
           <!-- Sidebar -->
           <aside id="mySidepanel" class="sidepanel">
             <div class="sidebar flex">
-            
               <button class="closebtn btn_hover1" onclick="closeNav()">
                 <i class="fa-solid fa-xmark"></i>
               </button>
@@ -102,9 +107,7 @@
                         <a class="nav-link" href="">Services</a>
                       </li>
                       <li>
-                        <a class="nav-link" href="service.html"
-                          >Strategy</a
-                        >
+                        <a class="nav-link" href="service.html">Strategy</a>
                       </li>
                       <li>
                         <a class="nav-link" href="branding-service.html"
@@ -120,21 +123,29 @@
                         >
                       </li>
                       <li>
-                        <a class="nav-link" href="social-media-service.html">Social Media</a>
-                      </li>
-                      <li>
-                        <a class="nav-link" href="paid-social-service.html">Paid Social</a>
-                      </li>
-                      <li>
-                        <a class="nav-link" href="seo-service.html"
-                          >SEO</a
+                        <a class="nav-link" href="social-media-service.html"
+                          >Social Media</a
                         >
                       </li>
                       <li>
-                        <a class="nav-link" href="data-science-and-analytics.html">Data Science & Analytics</a>
+                        <a class="nav-link" href="paid-social-service.html"
+                          >Paid Social</a
+                        >
                       </li>
                       <li>
-                        <a class="nav-link" href="ux-design-service.html">UX Design</a>
+                        <a class="nav-link" href="seo-service.html">SEO</a>
+                      </li>
+                      <li>
+                        <a
+                          class="nav-link"
+                          href="data-science-and-analytics.html"
+                          >Data Science & Analytics</a
+                        >
+                      </li>
+                      <li>
+                        <a class="nav-link" href="ux-design-service.html"
+                          >UX Design</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -146,15 +157,183 @@
         <!-- ====== End of 1.1. Header section ====== -->
         <!-- ====== 1.2. hero section ====== -->
         <section class="hero">
-          <video autoplay muted loop playsinline class="background-video">
-            <source src="../Images/Comp 1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div class="container" data-aos="zoom-in">
-            <div>
-              <div class="center-data"></div>
+          <main>
+            <div class="vignette hide"></div>
+            <img
+              src="img/background.png"
+              data-speedx="0.3"
+              data-speedy="0.38"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="-200"
+              class="parallax bg-img"
+            />
+            <img
+              src="img/fog_7.png"
+              data-speedx="0.27"
+              data-speedy="0.32"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="850"
+              class="parallax fog-7"
+            />
+            <img
+              src="img/mountain_10.png"
+              data-speedx="0.195"
+              data-speedy="0.305"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="1100"
+              class="parallax mountain-10"
+            />
+            <img
+              src="img/fog_6.png"
+              data-speedx="0.25"
+              data-speedy="0.28"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="1400"
+              class="parallax fog-6"
+            />
+            <img
+              src="img/mountain_9.png"
+              data-speedx="0.125"
+              data-speedy="0.155"
+              data-speedz="0.15"
+              data-rotation="0.02"
+              data-distance="1700"
+              class="parallax mountain-9"
+            />
+            <img
+              src="img/mountain_8.png"
+              data-speedx="0.1"
+              data-speedy="0.11"
+              data-speedz="0"
+              data-rotation="0.02"
+              data-distance="1800"
+              class="parallax mountain-8"
+            />
+            <img
+              src="img/fog_5.png"
+              data-speedx="0.16"
+              data-speedy="0.105"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="1900"
+              class="parallax fog-5"
+            />
+            <img
+              src="img/mountain_7.png"
+              data-speedx="0.1"
+              data-speedy="0.1"
+              data-speedz="0"
+              data-rotation="0.09"
+              data-distance="2000"
+              class="parallax mountain-7"
+            />
+            <div
+              class="text parallax"
+              data-speedx="0.07"
+              data-speedy="0.07"
+              data-speedz="0"
+              data-rotation="0.11"
+            >
+              <h2>ARC</h2>
+              <h1>Digital</h1>
             </div>
-          </div>
+            <img
+              src="img/mountain_6.png"
+              data-speedx="0.065"
+              data-speedy="0.05"
+              data-speedz="0.05"
+              data-rotation="0.12"
+              data-distance="2300"
+              class="parallax mountain-6"
+            />
+            <img
+              src="img/fog_4.png"
+              data-speedx="0.135"
+              data-speedy="0.04"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="2400"
+              class="parallax fog-4"
+            />
+            <img
+              src="img/mountain_5.png"
+              data-speedx="0.08"
+              data-speedy="0.03"
+              data-speedz="0.13"
+              data-rotation="0.1"
+              data-distance="2550"
+              class="parallax mountain-5"
+            />
+            <img
+              src="img/fog_3.png"
+              data-speedx="0.11"
+              data-speedy="0.018"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="2800"
+              class="parallax fog-3"
+            />
+            <img
+              src="img/mountain_4.png"
+              data-speedx="0.059"
+              data-speedy="0.024"
+              data-speedz="0.35"
+              data-rotation="0.14"
+              data-distance="3200"
+              class="parallax mountain-4"
+            />
+            <img
+              src="img/mountain_3.png"
+              data-speedx="0.04"
+              data-speedy="0.018"
+              data-speedz="0.32"
+              data-rotation="0.05"
+              data-distance="3400"
+              class="parallax mountain-3"
+            />
+            <img
+              src="img/fog_2.png"
+              data-speedx="0.15"
+              data-speedy="0.0115"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="3600"
+              class="parallax fog-2"
+            />
+            <img
+              src="img/mountain_2.png"
+              data-speedx="0.0235"
+              data-speedy="0.013"
+              data-speedz="0.42"
+              data-rotation="0.15"
+              data-distance="3800"
+              class="parallax mountain-2"
+            />
+            <img
+              src="img/mountain_1.png"
+              data-speedx="0.027"
+              data-speedy="0.018"
+              data-speedz="0.53"
+              data-rotation="0.2"
+              data-distance="4000"
+              class="parallax mountain-1"
+            />
+            <img src="img/sun_rays.png" class="sun-rays hide" />
+            <img src="img/black_shadow.png" class="black-shadow hide" />
+            <img
+              src="img/fog_1.png"
+              data-speedx="0.12"
+              data-speedy="0.01"
+              data-speedz="0"
+              data-rotation="0"
+              data-distance="4200"
+              class="parallax fog-1"
+            />
+          </main>
         </section>
         <!-- ====== End of 1.2. hero section ====== -->
       </div>
@@ -938,11 +1117,27 @@
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <span class="flex gap-2">
-                  <a href="https://web.facebook.com/ArcDigitalSL"  target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/arcdigitalsl/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="https://x.com/arcdigitalsl"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"  target="_blank"></i></a>
-                  <a href="https://www.youtube.com/channel/UCywikiKolFwNMKiG18taC4g"  target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                  <a
+                    href="https://web.facebook.com/ArcDigitalSL"
+                    target="_blank"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/arcdigitalsl/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="https://x.com/arcdigitalsl" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-linkedin" target="_blank"></i
+                  ></a>
+                  <a
+                    href="https://www.youtube.com/channel/UCywikiKolFwNMKiG18taC4g"
+                    target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
                 </span>
               </div>
               <div class="w-16 mt-1">
@@ -1067,11 +1262,11 @@
           }
           lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         });
-      }   else{
-        navbar.style.background = "none"
-      }   
+      } else {
+        navbar.style.background = "none";
+      }
     </script>
-  
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Get the current URL path
@@ -1143,5 +1338,8 @@
         });
       });
     </script>
+    
+  <script src="js/gsap.min.js"></script>
+  <script src="js/app.js" defer></script>
   </body>
 </html>

@@ -308,7 +308,7 @@ nav {
 }
 
 .nav-link {
-  color: #ffffff;
+  color: #000000;
 }
 
 nav li a.active,
@@ -772,7 +772,7 @@ aside .pages {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 72px 0 279px 0;
+  /* padding: 72px 0 279px 0; */
   height: 100vh;
 }
 
