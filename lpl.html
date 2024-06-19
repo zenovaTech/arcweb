@@ -32,65 +32,49 @@
             <div class="container-nav flex">
               <!-- site logo -->
               <a class="navbar-logo" href="/"
-                ><img
-                  id="logo"
-                  src="Images/ARC_Logo.png"
-                  style="display: block !important"
-                  alt="logo"
+                ><img id="logo" src="Images/ARC_Logo.png" alt="logo"
               /></a>
               <button class="navbar-toggler" onclick="openNav()" type="button">
                 <span class="fa-solid fa-bars"></span>
               </button>
               <!-- menus -->
-              <ul class="navbar-nav flex">
+              <ul id="navbar-nav" class="navbar-nav flex">
                 <li>
-                  <a
-                    class="nav-link active"
-                    href="/home.html"
-                    style="color: white !important"
-                    >Home</a
-                  >
+                  <a id="home-link" class="nav-link" href="/home.html">Home</a>
                 </li>
                 <li>
-                  <a
-                    class="nav-link"
-                    href="about.html"
-                    style="color: white !important"
+                  <a id="about-link" class="nav-link" href="about.html"
                     >About</a
                   >
                 </li>
-                <!-- <li><a class="nav-link" href="#Services">Services</a></li> -->
                 <li>
                   <a
+                    id="services-link"
                     class="nav-link"
-                    href="comingsoon.html"
-                    style="color: white !important"
-                    >Contact</a
+                    href="home.html#Services"
+                    >Services</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="nav-link"
-                    href="comingsoon.html"
-                    style="color: white !important"
+                  <a id="work-link" class="nav-link" href="our-work.html"
+                    >Work</a
+                  >
+                </li>
+                <li>
+                  <a id="careers-link" class="nav-link" href="comingsoon.html"
                     >Careers</a
+                  >
+                </li>
+                <li>
+                  <a id="contact-link" class="nav-link" href="contact.html"
+                    >Contact</a
                   >
                 </li>
               </ul>
             </div>
-
-            <div class="flex nav-right">
-              <!-- <p>Call Us: <span>+94 (0)77 336 8822 </span></p> -->
-              <!-- header buttons -->
-              <i
-                onclick="open_search_bar()"
-                class="fa-solid fa-magnifying-glass"
-              ></i>
-              <i onclick="open_right_side()" class="fa-solid fa-bars"></i>
-            </div>
           </nav>
-          <!-- Sidebar -->
-          <aside id="mySidepanel" class="sidepanel">
+          <!--    
+       <aside id="mySidepanel" class="sidepanel">
             <div class="sidebar flex">
               <a href=""><img src="Images/ARC_Logo.png" alt="logo" /></a>
               <button class="closebtn btn_hover1" onclick="closeNav()">
@@ -98,12 +82,12 @@
               </button>
             </div>
             <div>
-              <!-- side menus -->
-              <ul>
-                <li><a class="nav-link active" href="index.html">Home</a></li>
+     
+              <ul >
+                <li><a class="nav-link active" href="index.html" >Home</a></li>
                 <li><a class="nav-link" href="about.html">About</a></li>
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="pages"><a href="#">More</a></li>
+                <li class="pages"><a href="#"></a></li>
                 <li class="collapse_btn">
                   <a
                     class="nav-link plus_collapse"
@@ -157,56 +141,7 @@
                 </li>
               </ul>
             </div>
-          </aside>
-
-          <!-- searchbar -->
-          <div id="search-bar">
-            <div class="btn_hover1" onclick="close_search_bar()">
-              <i class="fa-solid fa-xmark"></i>
-            </div>
-            <form method="search" action="#">
-              <input type="search" required placeholder="Search..." />
-              <button type="submit" class="btn_hover1">Search</button>
-            </form>
-          </div>
-
-          <!-- Right Sidebar -->
-          <section class="header-right-sidebar" id="right_side">
-            <div class="flex flex-sb">
-              <a href="/"><img src="Images/ARC_Logo.png" alt="logo" /></a>
-              <button
-                class="close_right_sidebar fa-solid fa-xmark"
-                onclick="close_right_sade()"
-              ></button>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a href="/comingsoon.html" class="btn_hover1">Discover More</a>
-            <hr />
-            <h4>Connected details:</h4>
-            <ul class="flex">
-              <li>
-                <a href="#"> <i class="fa-solid fa-phone"></i></a>
-                <a href="#" class="text-lowercase">info@arcdigital.lk</a>
-              </li>
-              <li>
-                <a href="#"> <i class="fa-regular fa-envelope"></i></a>
-                <a href="#">+94 (0)77 336 8822</a>
-              </li>
-              <li>
-                <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
-                <a href="#">Office Hours: 8AM - 6PM Sunday - Week Days</a>
-              </li>
-            </ul>
-            <span class="flex">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </span>
-          </section>
+          </aside> -->
         </header>
       </div>
       <!-- ====== End of 1.1. Header section ====== -->
@@ -214,7 +149,7 @@
       <!-- ====== 1.5. About us section ====== -->
       <section class="work-section">
         <div class="container">
-          <div class="work-view">
+          <div class="work-view" style="background-image: url(Images/lpl3.jpg)">
             <div class="text-area">
               <h2>Lanka Premier League</h2>
 
@@ -413,5 +348,48 @@
 
     <!-- custom js -->
     <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const navbar = document.getElementById("navbar");
+        const logo = document.getElementById("navbar-logo"); // Assume the logo has this ID
+    
+        if (screen.width > 1000) {
+          navbar.style.background = "#888888a6";
+          navbar.style.backdropFilter = "blur(20px)";
+        } else {
+          navbar.style.background = "none";
+          if (logo) {
+            logo.style.display = "none";
+          }
+        }
+      });
+    
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+      const logo = document.getElementById("navbar-logo"); // Assume the logo has this ID
+    
+      if (screen.width > 1000) {
+        window.addEventListener("scroll", function () {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          
+          if (scrollTop > 470) {
+            if (scrollTop > lastScrollTop) {
+              navbar.classList.add("hidden");
+            } else {
+              navbar.classList.remove("hidden");
+            }
+          } else {
+            navbar.classList.remove("hidden");
+            if (scrollTop === 0) {
+              navbar.style.background = "#888888a6";
+            } else {
+              navbar.style.background = "#888888";
+            }
+          }
+          
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+      }
+    </script>
   </body>
 </html>

@@ -32,8 +32,8 @@
           <nav id="navbar" class="navbar container">
             <div class="container-nav flex">
               <!-- site logo -->
-              <a class="navbar-logo" href="/"
-                ><img id="logo" src="Images/ARC_Logo.png" alt="logo"
+              <a id="logo" class="navbar-logo" href="/home.html"
+                ><img src="Images/ARC_Logo.png" alt="logo"
               /></a>
               <button
                 id="navbar-toggler"
@@ -649,7 +649,7 @@
                 <div class="flex w-100">
                   <div class="w-33">
                     <figure>
-                      <img src="Images/home/all-gallary-1.png" alt="img" />
+                      <img src="Images/gallery/series wins.png" alt="img" />
                     </figure>
                   </div>
                   <div class="w-33">
@@ -1241,6 +1241,15 @@
     <script>
       let lastScrollTop = 0;
       const navbar = document.getElementById("navbar");
+      const logo = document.getElementById("logo");
+      document.addEventListener("DOMContentLoaded", function() {
+        
+        const logo = document.getElementById("logo"); // Assume the logo has this ID
+    
+        if (screen.width > 1000) {
+          logo.style.display ="none"
+        } 
+      });
       if (screen.width > 1000) {
         window.addEventListener("scroll", function () {
           const scrollTop =
@@ -1252,12 +1261,14 @@
               navbar.classList.remove("hidden");
               navbar.style.background = "#888888a6";
               navbar.style.backdropFilter = "blur(20px)";
+              logo.style.display ="block"
             }
           } else {
             navbar.classList.remove("hidden");
             if (scrollTop === 0) {
               navbar.style.background = "none";
               navbar.style.backdropFilter = "none";
+              logo.style.display ="none"
             }
           }
           lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;

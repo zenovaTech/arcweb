@@ -464,7 +464,8 @@ nav li a.active,
 
 aside {
   background-color: #000000;
-  z-index: 10;
+  z-index: 10000;
+  color: white;
 }
 
 .sidepanel {
@@ -476,6 +477,7 @@ aside {
   overflow-x: hidden;
   transition: 0.5s;
   padding: 40px 20px 20px 20px;
+  color: white;
 }
 
 .sidepanel::-webkit-scrollbar {
@@ -545,6 +547,7 @@ aside {
 
 .sidebar a {
   padding: 10px 0;
+  color: white;
 }
 
 aside ul {
@@ -552,14 +555,16 @@ aside ul {
   padding: 0;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 aside ul li {
   margin: 15px 0;
+  color: white;
 }
 
 aside li a {
-  color: #d3c9c1;
+  color: #ffffff;
   transition: 500ms;
   padding: 10px 0;
 }
@@ -868,8 +873,9 @@ aside .pages {
   background: white;
 }
 .btn_hover2:hover{
-  color: white;
-  background: none;
+  color: rgb(0, 0, 0);
+
+  background: rgba(0, 97, 241, 0.103);
 }
 /* .btn_hover2::before {
   content: "";
@@ -2656,7 +2662,7 @@ footer form button:hover {
   padding: 0 !important;
 }
 .work-view {
-  background-image: url("../Images/Cycle-Race-web-banner_1440-x-500.png");
+
 
   background-size: cover;
   background-position: center;
@@ -2846,6 +2852,7 @@ footer form button:hover {
 .about-page .container .about-data .w-50 .description {
   display: flex;
   flex-direction: column;
+
 }
 
 .about-page .container .about-data h3 {
@@ -2859,9 +2866,12 @@ footer form button:hover {
   font-family: "Barlow", sans-serif;
   margin-bottom: 20px;
 }
-
+.about-page p::first-letter {
+  text-transform: capitalize;
+}
 .about-page p {
   color: #000000;
+  text-transform: lowercase;
 }
 
 .about-page i {
