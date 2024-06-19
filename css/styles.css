@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 *,
 *::before,
 *::after {
@@ -99,6 +99,7 @@ main {
 
 .text {
   position: absolute;
+  font-family: "Forum", sans-serif !important;
   z-index: 15;
   top: 44%;
   left: 50%;
@@ -110,16 +111,17 @@ main {
 
 .text h2 {
   font-weight: 200;
+  font-family: "Forum", sans-serif !important;
   font-size: 6.8rem;
   line-height: 0.88;
 }
 
 .text h1 {
-  
+  font-family: "Forum", sans-serif !important;
   font-weight: 800;
   line-height: 0.88;
   font-size: 8.7rem;
-  color: yellow;
+  color: rgb(255, 255, 255);
 }
 
 .mountain-6 {
@@ -375,10 +377,10 @@ main {
 
 @media (max-width: 520px) {
   .text h1 {
-    font-size: 3.3rem;
+    font-size: 4.3rem;
   }
 
   .text h2 {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
   }
 }

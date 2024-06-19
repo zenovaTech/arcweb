@@ -8,6 +8,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* ============= 01. Reset section ============= */
+@font-face {
+  font-family: 'CustomFont';
+  src: url("Beat\ Word\ demo.ttf") format('truetype');
+}
 
 html,
 div,
@@ -1254,7 +1258,7 @@ aside .pages {
 
 /* gallary */
 .gallary {
-  background-image: url("../Images/home/whale.jpg");
+  
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-bottom: 120px;
@@ -1278,7 +1282,7 @@ aside .pages {
 }
 
 .gallary span {
-  background-color: #150725;
+  background-color: #ffffff;
   opacity: 0.8;
   width: 100% !important;
   height: 100%;
@@ -1402,7 +1406,7 @@ aside .pages {
   text-align: center;
 }
 .service-card img {
-  object-fit: cover;
+  object-fit:cover;
   margin: auto;
   display: flex;
 }
@@ -1419,10 +1423,10 @@ aside .pages {
   width: 105px;
 }
 .service-card img[alt="slider2"] {
-  width: 75px;
+  width: 105px;
 }
 .service-card img[alt="slider3"] {
-  width: 60px;
+  width: 105px;
 }
 
 /* ====== End of 1.7. Services section ====== */
@@ -3396,9 +3400,13 @@ left: 33%;
   width: 100%;
 }
 
-.about-gallery .container .content .top-img {
+
+.about-gallery .container .content .top-img h1{
+  text-align: center;
+  color: #066fb6;
   display: flex;
   justify-content: center;
+  font-family: "CustomFont" !important;
 }
 
 .about-gallery .container .content .top-img img {
