@@ -597,16 +597,20 @@
               <div class="w-50">
                 <div class="flex gap-1">
                   <hr class="gallary-hr1" />
-                  <h5>Our Work</h5>
+                  <h5>Portfolio</h5>
                 </div>
-                <!-- <h2 class="mt-15">Our Latest Projects.</h2> -->
+                <h2 class="mt-15">Our Latest Projects.</h2>
                 <!-- <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever.
                 </p> -->
               </div>
-
+              <div class="flex flex-end w-100">
+                <a href="our-work.html" class="btn_hover2"
+                  >View All Projects</a
+                >
+              </div>
               <!-- <hr class="mt-30" /> -->
             </div>
           </div>
@@ -621,10 +625,7 @@
               <button class="tablinks active" onclick="open_img(event, 'all')">
                 Posts
               </button>
-              <button
-                class="tablinks"
-                onclick="open_img(event, 'design')"
-              >
+              <button class="tablinks" onclick="open_img(event, 'design')">
                 DESIGN
               </button>
               <button class="tablinks" onclick="open_img(event, 'development')">
@@ -643,41 +644,77 @@
                 SEO
               </button>
             </div>
+            <div class="middle">
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <a href="./Images/vacncyposter.pdf" target="_blank">
+                  <span class="button-text">View More</span></a
+                >
+              </button>
+            </div>
             <!-- Tab content -->
             <div id="all" class="tabcontent" style="display: block">
               <div class="flex flex-center">
                 <div class="flex w-100">
                   <div class="w-33">
                     <figure>
-                      <img src="Images/gallery/series wins.png" alt="img" style="object-fit: contain;"/>
+                      <img
+                        src="Images/gallery/series wins.png"
+                        alt="img"
+                        style="object-fit: contain"
+                      />
                     </figure>
                   </div>
                   <div class="w-33">
                     <figure>
-                      <img src="Images/posts/Aurudu Post 1.png" alt="img" style="object-fit: contain;"/>
+                      <img
+                        src="Images/posts/Aurudu Post 1.png"
+                        alt="img"
+                        style="object-fit: contain"
+                      />
                     </figure>
                   </div>
                   <div class="w-33">
                     <figure>
-                      <img src="Images/posts/WhatsApp Image 2024-06-18 at 10.50.14 AM (1).jpeg" alt="img" />
+                      <img
+                        src="Images/posts/WhatsApp Image 2024-06-18 at 10.50.14 AM (1).jpeg"
+                        alt="img"
+                      />
                     </figure>
                   </div>
                   <div class="w-66">
                     <figure>
-                      <img src="Images/posts/cricket post.png" alt="img" style="object-fit: contain;"/>
+                      <img
+                        src="Images/posts/cricket post.png"
+                        alt="img"
+                        style="object-fit: contain"
+                      />
                     </figure>
                   </div>
                   <div class="w-33">
                     <figure>
-                      <img src="Images/posts/post 2.png" alt="img"style="object-fit: contain;" />
+                      <img
+                        src="Images/posts/post 2.png"
+                        alt="img"
+                        style="object-fit: contain"
+                      />
                     </figure>
                   </div>
                   <div class="w-33">
                     <figure>
-                      <img src="Images/posts/22.png" alt="sm_img" style="object-fit: contain;"/>
+                      <img
+                        src="Images/posts/22.png"
+                        alt="sm_img"
+                        style="object-fit: contain"
+                      />
                     </figure>
                     <figure>
-                      <img src="Images/posts/Copy of MAXXIS post 3.jpeg" alt="sm_img" />
+                      <img
+                        src="Images/posts/Copy of MAXXIS post 3.jpeg"
+                        alt="sm_img"
+                      />
                     </figure>
                   </div>
                   <div class="w-66">
@@ -947,7 +984,10 @@
               </div>
               <div class="service-card" data-aos="fade-up">
                 <figure>
-                  <img src="Images/icon/Display and Retargeting.png" alt="slider3" />
+                  <img
+                    src="Images/icon/Display and Retargeting.png"
+                    alt="slider3"
+                  />
                 </figure>
                 <h4>Display and Retargeting</h4>
                 <p>Boost brand awareness among your target market.</p>
@@ -989,7 +1029,10 @@
               </div>
               <div class="service-card" data-aos="fade-down">
                 <figure>
-                  <img src="Images/icon/Data Science & Analytics.png" alt="slider3" />
+                  <img
+                    src="Images/icon/Data Science & Analytics.png"
+                    alt="slider3"
+                  />
                 </figure>
                 <h4>Data Science & Analytics</h4>
                 <p>Leverage data science for optimized marketing analytics.</p>
@@ -1242,13 +1285,12 @@
       let lastScrollTop = 0;
       const navbar = document.getElementById("navbar");
       const logo = document.getElementById("logo");
-      document.addEventListener("DOMContentLoaded", function() {
-        
+      document.addEventListener("DOMContentLoaded", function () {
         const logo = document.getElementById("logo"); // Assume the logo has this ID
-    
+
         if (screen.width > 1000) {
-          logo.style.display ="none"
-        } 
+          logo.style.display = "none";
+        }
       });
       if (screen.width > 1000) {
         window.addEventListener("scroll", function () {
@@ -1261,14 +1303,14 @@
               navbar.classList.remove("hidden");
               navbar.style.background = "#888888a6";
               navbar.style.backdropFilter = "blur(20px)";
-              logo.style.display ="block"
+              logo.style.display = "block";
             }
           } else {
             navbar.classList.remove("hidden");
             if (scrollTop === 0) {
               navbar.style.background = "none";
               navbar.style.backdropFilter = "none";
-              logo.style.display ="none"
+              logo.style.display = "none";
             }
           }
           lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
@@ -1349,8 +1391,8 @@
         });
       });
     </script>
-    
-  <script src="js/gsap.min.js"></script>
-  <script src="js/app.js" defer></script>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>
