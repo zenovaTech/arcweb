@@ -632,10 +632,13 @@
         overflow-x: hidden;
     }
     .hero {
-        padding: 44px 0 82px 0;
+        padding: 0px 0 82px 0;
     }
     .logoipsum h3{
         font-size: 12px;
+    }
+    .nav-link{
+        color: white;
     }
     .services-section .services-intro p {
     
@@ -724,5 +727,6 @@
         font-weight: 400;
         line-height: 20px;
         padding: 12px 26px 12px 26px !important;
+        color: white;
     }
 }
