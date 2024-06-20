@@ -641,7 +641,13 @@
         color: white;
     }
     .services-section .services-intro p {
-    
+        font-size: 10px;
+        color: red;
+        text-align: center;
+        line-height: 15px;
+      }
+      .work-section .services-intro p {
+        
         text-align: center;
         line-height: 15px;
       }
